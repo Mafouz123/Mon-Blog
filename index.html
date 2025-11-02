@@ -8,28 +8,16 @@
 </head>
 <body>
 
-  <!-- Bouton d’ouverture du menu -->
-  <button id="toggleMenu" class="menu-toggle">☰</button>
-
-  <!-- Menu latéral -->
-  <aside id="sideMenu" class="side-header">
-    <nav class="side-nav">
-      <ul>
-        <li><a href="#accueil">🏠 Accueil</a></li>
-        <li><a href="#prompting">🧠 Ingénierie Prompt</a></li>
-        <li><a href="#formations">📚 Formations</a></li>
-        <li><a href="#apropos">👨‍💻 À propos</a></li>
-        <li><a href="#contact">📞 Contact</a></li>
-      </ul>
-      <a href="https://whatsapp.com/channel/0029VbCSqtUChq6OXqZ8ot0q" target="_blank" class="btn whatsapp-icon">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon" />
-        Rejoindre ma chaîne
-      </a>
-    </nav>
-  </aside>
+  <!-- En-tête centré avec lien WhatsApp -->
+  <header class="top-bar">
+    <a href="https://whatsapp.com/channel/0029VbCSqtUChq6OXqZ8ot0q" target="_blank" class="btn whatsapp-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon" />
+      Rejoindre ma chaîne
+    </a>
+  </header>
 
   <!-- Contenu principal -->
-  <main id="mainContent">
+  <main>
 
     <!-- Accueil -->
     <section id="accueil" class="hero-content">
@@ -126,18 +114,6 @@
     </footer>
 
   </main>
-
-  <!-- Script d’interaction du menu -->
-  <script>
-    const toggleBtn = document.getElementById('toggleMenu');
-    const sideMenu = document.getElementById('sideMenu');
-    const mainContent = document.getElementById('mainContent');
-
-    toggleBtn.addEventListener('click', () => {
-      sideMenu.classList.toggle('open');
-      mainContent.classList.toggle('shifted');
-    });
-  </script>
 
 </body>
 </html>
