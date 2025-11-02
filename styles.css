@@ -131,6 +131,147 @@ ul li {
   animation: fadeIn 1.5s ease-in-out;
 }
 
+
+/* Bouton toggle */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Menu latéral fermé par défaut */
+.side-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: #1c2b1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 10px;
+  z-index: 1000;
+  transform: translateX(-220px);
+  transition: transform 0.3s ease;
+}
+
+.side-header.open {
+  transform: translateX(0);
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+}
+
+.side-nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+  color: #00c896;
+}
+
+main {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+
+main.shifted {
+  margin-left: 200px;
+}
+
+/* Bouton toggle */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Menu latéral fermé par défaut */
+.side-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: #1c2b1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 10px;
+  z-index: 1000;
+  transform: translateX(-220px);
+  transition: transform 0.3s ease;
+}
+
+.side-header.open {
+  transform: translateX(0);
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+}
+
+.side-nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+  color: #00c896;
+}
+
+main {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+
+main.shifted {
+  margin-left: 200px;
+}
+
 /* ========== BIO IMMERSIVE ========== */
 .bio-section {
   background: radial-gradient(circle at top left, #1f1c2c, #928dab);
