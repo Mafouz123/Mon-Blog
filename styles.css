@@ -184,6 +184,62 @@ ul li {
   }
 }
 
+.bio-section {
+  background: radial-gradient(circle at top left, #1f1c2c, #928dab);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.bio-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.bio-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card li {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
