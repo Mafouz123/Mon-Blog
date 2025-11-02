@@ -187,6 +187,69 @@ ul li {
   width: 100%;
 }
 
+.github-style-header {
+  background-color: #f6f8fa;
+  border-bottom: 1px solid #d0d7de;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger-btn .bar {
+  width: 22px;
+  height: 2px;
+  background-color: #24292f;
+  border-radius: 2px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+.menu-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #24292f;
+}
+
+.whatsapp-icon {
+  background-color: #25D366;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.whatsapp-icon .icon {
+  width: 20px;
+  height: 20px;
+}
+
+
 /* Animation menu */
 @keyframes slideDown {
   from {
