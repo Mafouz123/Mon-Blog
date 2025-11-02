@@ -1,4 +1,103 @@
 /* styles.css */
+/* Barre supérieure */
+.top-bar {
+  background-color: #1c2b1f; /* Vert foncé */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Menu de navigation */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #00c896;
+}
+
+/* Bouton WhatsApp */
+.whatsapp-icon {
+  background-color: #25D366;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.whatsapp-icon .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Section d’accueil */
+.hero-content {
+  background-color: #0f2027;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero-content .btn {
+  background-color: #00c896;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background-color: #00a67d;
+}
+
+/* Image d’accueil */
+.hero-image {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
