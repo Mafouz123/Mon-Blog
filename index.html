@@ -7,35 +7,19 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<!-- Bouton d’ouverture du menu -->
-<button id="toggleMenu" class="menu-toggle">☰</button>
 
-<!-- Menu latéral -->
-<aside id="sideMenu" class="side-header">
-  <nav class="side-nav">
-    <ul>
-      <li><a href="#accueil">🏠 Accueil</a></li>
-      <li><a href="#prompting">🧠 Ingénierie Prompt</a></li>
-      <li><a href="#formations">📚 Formations</a></li>
-      <li><a href="#apropos">👨‍💻 À propos</a></li>
-      <li><a href="#contact">📞 Contact</a></li>
-    </ul>
-    <a href="https://whatsapp.com/channel/0029VbCSqtUChq6OXqZ8ot0q" target="_blank" class="btn whatsapp-icon">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon" />
-      Rejoindre ma chaîne
-    </a>
-  </nav>
-</aside>
+  <!-- Bouton d’ouverture du menu -->
+  <button id="toggleMenu" class="menu-toggle">☰</button>
 
-  <!-- Menu latéral vertical -->
-  <aside class="side-header">
+  <!-- Menu latéral -->
+  <aside id="sideMenu" class="side-header">
     <nav class="side-nav">
       <ul>
-        <li><a href="#contact">📞 Contact</a></li>
-        <li><a href="#apropos">👨‍💻 À propos</a></li>
-        <li><a href="#formations">📚 Formations</a></li>
-        <li><a href="#prompting">🧠 Ingénierie Prompt</a></li>
         <li><a href="#accueil">🏠 Accueil</a></li>
+        <li><a href="#prompting">🧠 Ingénierie Prompt</a></li>
+        <li><a href="#formations">📚 Formations</a></li>
+        <li><a href="#apropos">👨‍💻 À propos</a></li>
+        <li><a href="#contact">📞 Contact</a></li>
       </ul>
       <a href="https://whatsapp.com/channel/0029VbCSqtUChq6OXqZ8ot0q" target="_blank" class="btn whatsapp-icon">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon" />
@@ -45,9 +29,9 @@
   </aside>
 
   <!-- Contenu principal -->
-  <main style="margin-left: 200px;">
+  <main id="mainContent">
 
-    <!-- Section: Accueil -->
+    <!-- Accueil -->
     <section id="accueil" class="hero-content">
       <h1 class="fade-in">Ingénierie Prompt</h1>
       <p class="fade-in delay">Explorez les usages, les enjeux et les tendances de l’ingénierie prompte dans le monde numérique</p>
@@ -55,7 +39,7 @@
       <img src="image.png" alt="Ingénierie Prompt - Visuel immersif" class="hero-image" />
     </section>
 
-    <!-- Section: Ingénierie Prompt -->
+    <!-- Ingénierie Prompt -->
     <section id="prompting">
       <h2 class="slide-up">🧠 À propos de l’ingénierie prompt</h2>
       <article>
@@ -69,7 +53,7 @@
     </section>
     <div class="separator"></div>
 
-    <!-- Section: Formations -->
+    <!-- Formations -->
     <section id="formations">
       <h2 class="slide-up">📚 Formations à court terme</h2>
       <ul>
@@ -81,7 +65,7 @@
     </section>
     <div class="separator"></div>
 
-    <!-- Section: À propos -->
+    <!-- À propos -->
     <section id="apropos">
       <h2 class="slide-up">👨‍💻 À propos du développeur</h2>
       <p>Je suis <strong>Mafouz</strong>, entrepreneur, développeur freelance et créateur de produits numériques. Mon expertise couvre le développement web, l’intelligence artificielle, le design immersif et la formation technique.</p>
@@ -92,7 +76,7 @@
       </ul>
     </section>
 
-    <!-- Section: Bio immersive -->
+    <!-- Bio immersive -->
     <section id="bio" class="bio-section">
       <div class="container">
         <h2>👋 Qui suis-je ?</h2>
@@ -129,7 +113,7 @@
 
     <div class="separator"></div>
 
-    <!-- Section: Contact -->
+    <!-- Contact -->
     <section id="contact">
       <h2 class="slide-up">📞 Contact</h2>
       <p>Intéressé par une formation ou une collaboration ?</p>
@@ -142,16 +126,18 @@
     </footer>
 
   </main>
-  <script>
-  const toggleBtn = document.getElementById('toggleMenu');
-  const sideMenu = document.getElementById('sideMenu');
-  const mainContent = document.querySelector('main');
 
-  toggleBtn.addEventListener('click', () => {
-    sideMenu.classList.toggle('open');
-    mainContent.classList.toggle('shifted');
-  });
-</script>
+  <!-- Script d’interaction du menu -->
+  <script>
+    const toggleBtn = document.getElementById('toggleMenu');
+    const sideMenu = document.getElementById('sideMenu');
+    const mainContent = document.getElementById('mainContent');
+
+    toggleBtn.addEventListener('click', () => {
+      sideMenu.classList.toggle('open');
+      mainContent.classList.toggle('shifted');
+    });
+  </script>
 
 </body>
 </html>
