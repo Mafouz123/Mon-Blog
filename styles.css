@@ -1,4 +1,65 @@
 /* styles.css */
+
+.side-header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: #1c2b1f;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  padding: 20px 10px;
+  z-index: 1000;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+}
+
+.side-nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+  color: #00c896;
+}
+
+.whatsapp-icon {
+  background-color: #25D366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.whatsapp-icon .icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* Barre supérieure */
 .top-bar {
   background-color: #1c2b1f; /* Vert foncé */
