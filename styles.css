@@ -55,6 +55,22 @@ ul li {
   animation: fadeIn 1.5s forwards;
 }
 
+.separator {
+  height: 4px;
+  width: 80%;
+  margin: 2rem auto;
+  background: linear-gradient(90deg, #25D366, #ffffff, #25D366);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
+  border-radius: 2px;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+
 .fade-in.delay {
   animation-delay: 0.5s;
 }
