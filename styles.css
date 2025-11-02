@@ -1,5 +1,34 @@
-/* styles.css */
+/* ========== BASE ========== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #4b5c3b, #5f6f45);
+  color: white;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
 
+header, section, footer {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+/* ========== MENU LATÉRAL ========== */
 .side-header {
   position: fixed;
   bottom: 0;
@@ -22,12 +51,10 @@
 }
 
 .side-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column-reverse;
   gap: 15px;
+  margin: 0;
 }
 
 .side-nav ul li a {
@@ -42,6 +69,7 @@
   color: #00c896;
 }
 
+/* ========== BOUTON WHATSAPP ========== */
 .whatsapp-icon {
   background-color: #25D366;
   color: white;
@@ -60,58 +88,7 @@
   height: 20px;
 }
 
-/* Barre supérieure */
-.top-bar {
-  background-color: #1c2b1f; /* Vert foncé */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-/* Menu de navigation */
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1em;
-  transition: color 0.3s ease;
-}
-
-.main-nav ul li a:hover {
-  color: #00c896;
-}
-
-/* Bouton WhatsApp */
-.whatsapp-icon {
-  background-color: #25D366;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-}
-
-.whatsapp-icon .icon {
-  width: 20px;
-  height: 20px;
-}
-
-/* Section d’accueil */
+/* ========== SECTION ACCUEIL ========== */
 .hero-content {
   background-color: #0f2027;
   color: white;
@@ -143,7 +120,7 @@
   background-color: #00a67d;
 }
 
-/* Image d’accueil */
+/* ========== IMAGE D’ACCUEIL ========== */
 .hero-image {
   width: 100%;
   max-height: 600px;
@@ -154,274 +131,7 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.98); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #4b5c3b, #5f6f45);
-  color: white;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-header, section, footer {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-h1, h2 {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 0.5rem 0;
-}
-
-/* Boutons stylisés */
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background-color: black;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.3s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-.whatsapp {
-  background-color: #25D366;
-}
-
-/* Animations */
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1.5s forwards;
-}
-
-.separator {
-  height: 4px;
-  width: 80%;
-  margin: 2rem auto;
-  background: linear-gradient(90deg, #25D366, #ffffff, #25D366);
-  background-size: 200% 100%;
-  animation: shimmer 3s infinite linear;
-  border-radius: 2px;
-}
-
-@keyframes shimmer {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 200% 0%; }
-}
-
-
-.fade-in.delay {
-  animation-delay: 0.5s;
-}
-
-.slide-up {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: slideUp 1s forwards;
-}
-
-.pulse {
-  animation: pulse 2s infinite;
-}
-
-.hero-image {
-  width: 100%;
-  max-height: 600px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.98); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-
-/* Keyframes */
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-@keyframes slideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
-
-/* Barre supérieure */
-.top-bar {
-  background-color: #1f2e1f;
-  padding: 0.5rem 1rem;
-  text-align: right;
-}
-
-.whatsapp-icon {
-  display: inline-flex;
-  align-items: center;
-  background-color: #25D366;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-icon:hover {
-  transform: scale(1.05);
-}
-
-.whatsapp-icon .icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
-/* Menu de navigation */
-.main-nav {
-  background-color: #2f3e2f;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  animation: slideDown 0.8s ease;
-}
-
-.main-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-}
-
-.main-nav a::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: #25D366;
-  transition: width 0.3s ease;
-}
-
-.main-nav a:hover::after {
-  width: 100%;
-}
-
-.github-style-header {
-  background-color: #f6f8fa;
-  border-bottom: 1px solid #d0d7de;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.menu-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  justify-content: space-between;
-}
-
-.hamburger-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.hamburger-btn .bar {
-  width: 22px;
-  height: 2px;
-  background-color: #24292f;
-  border-radius: 2px;
-}
-
-.logo {
-  width: 32px;
-  height: 32px;
-  margin-left: 10px;
-}
-
-.menu-title {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-left: 10px;
-  color: #24292f;
-}
-
-.whatsapp-icon {
-  background-color: #25D366;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-}
-
-.whatsapp-icon .icon {
-  width: 20px;
-  height: 20px;
-}
-
-
-/* Animation menu */
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
+/* ========== BIO IMMERSIVE ========== */
 .bio-section {
   background: radial-gradient(circle at top left, #1f1c2c, #928dab);
   color: #fff;
@@ -469,7 +179,6 @@ ul li {
 }
 
 .skill-card ul {
-  list-style: none;
   padding: 0;
 }
 
@@ -478,8 +187,86 @@ ul li {
   margin-bottom: 8px;
 }
 
+/* ========== SÉPARATEUR ========== */
+.separator {
+  height: 4px;
+  width: 80%;
+  margin: 2rem auto;
+  background: linear-gradient(90deg, #25D366, #ffffff, #25D366);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
+  border-radius: 2px;
+}
 
-/* Responsive */
+/* ========== BOUTONS GÉNÉRAUX ========== */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+/* ========== ANIMATIONS ========== */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 0.5s;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1s forwards;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+/* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   header, section {
     padding: 2rem 1rem;
@@ -491,5 +278,22 @@ ul li {
 
   h2 {
     font-size: 1.4rem;
+  }
+
+  .side-header {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .side-nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  main {
+    margin-left: 0 !important;
   }
 }
