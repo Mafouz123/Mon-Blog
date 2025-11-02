@@ -102,6 +102,89 @@ ul li {
   50% { transform: scale(1.05); }
 }
 
+/* Barre supérieure */
+.top-bar {
+  background-color: #1f2e1f;
+  padding: 0.5rem 1rem;
+  text-align: right;
+}
+
+.whatsapp-icon {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp-icon .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Menu de navigation */
+.main-nav {
+  background-color: #2f3e2f;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 0.8s ease;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #25D366;
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+/* Animation menu */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   header, section {
