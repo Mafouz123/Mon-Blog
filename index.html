@@ -142,5 +142,16 @@
     </footer>
 
   </main>
+  <script>
+  const toggleBtn = document.getElementById('toggleMenu');
+  const sideMenu = document.getElementById('sideMenu');
+  const mainContent = document.querySelector('main');
+
+  toggleBtn.addEventListener('click', () => {
+    sideMenu.classList.toggle('open');
+    mainContent.classList.toggle('shifted');
+  });
+</script>
+
 </body>
 </html>
