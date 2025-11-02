@@ -70,6 +70,41 @@ ul li {
 }
 
 /* ========== BOUTON WHATSAPP ========== */
+
+/* En-tête centré avec bouton WhatsApp */
+.top-bar {
+  background-color: #1c2b1f;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Bouton WhatsApp dans l’en-tête */
+.whatsapp-icon {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp-icon .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
 .whatsapp-icon {
   background-color: #25D366;
   color: white;
